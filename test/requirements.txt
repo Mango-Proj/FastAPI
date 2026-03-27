@@ -1,0 +1,18 @@
+# ─────────────────────────────────────────
+# Mango FastAPI API - 패키지 의존성 목록
+# 설치 방법: pip install -r requirements.txt
+# ─────────────────────────────────────────
+
+# FastAPI 웹 프레임워크
+fastapi>=0.110.0
+
+# ASGI 서버 (개발용)
+uvicorn[standard]>=0.27.0
+
+# JWT(JSON Web Token) 처리
+# create_access_token / verify_token 에 사용
+python-jose[cryptography]>=3.3.0
+
+# 비밀번호 해시화 (bcrypt)
+# pwd_context.hash / pwd_context.verify 에 사용
+passlib[bcrypt]>=1.7.4
